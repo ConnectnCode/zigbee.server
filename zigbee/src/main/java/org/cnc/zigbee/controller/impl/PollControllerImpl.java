@@ -24,12 +24,13 @@ public class PollControllerImpl implements PollController {
 
 		if(time == null){
 			return pollDataDao.fetchAll();
-		}else{
-			List<String> l = new ArrayList<String>();
-			l.add(pollDataDao.fetchOne(time));
-			return l;
 		}
-		
+//		else{
+//			List<String> l = new ArrayList<String>();
+//			l.add(pollDataDao.fetchOne(time));
+//			return l;
+//		}
+		return null;
 
 	}
 
